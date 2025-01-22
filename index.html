@@ -9,9 +9,208 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <title>First Repositery</title>
+<style>
+    /* Navbar styles */
+    .navbar-custom {
+      background-color: #344a60;
+    }
+
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-brand {
+      color: #ecf0f1;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: #f39c12;
+    }
+
+    .dropdown-menu {
+      background-color: #34495e;
+      border: none;
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: #ecf0f1;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #f39c12;
+      color: #2c3e50;
+    }
+
+    /* Card styles */
+    .card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      color: #2c3e50;
+    }
+
+    .card-text {
+      color: #7f8c8d;
+    }
+
+    .btn-custom {
+      background-color: #f39c12;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #d35400;
+    }
+  </style>
 </head>
 <body>
+    <body style="background-color: azure">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="pics/apple-icon-18.png" width="45" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item" style="background: linear-gradient(135deg, #50e3c2, #4a90e2);
+                
+                border-radius: 25px;
+                
+                transition: transform 0.3s, box-shadow 0.3s;">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Shop the latest</a></li>
+                    <li><a class="dropdown-item" href="#">Mac</a></li>
+                    <li><a class="dropdown-item" href="#">iPad</a></li>
+                    <li><a class="dropdown-item" href="#">iPhone</a></li>
+                    <li><a class="dropdown-item" href="#">Applae Watch</a></li>
+                    <li><a class="dropdown-item" href="#">Apple Version Pro</a></li>
+                    <li><a class="dropdown-item" href="#">Acccessories</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <!-- Cards Section -->
+        <div class="container my-5">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="pics/iPhone.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">IPhone</h5>
+                  <p class="card-text">
+                    "Trade in your iPhone and get credit toward your next Apple
+                    device.".
+                  </p>
+                  <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="pics/new.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">
+                    "Trade in your Laptop and get credit toward your next Apple
+                    device."
+                  </p>
+                  <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="pics/1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Smart Watch</h5>
+                  <p class="card-text">
+                    "Trade in your smartwatch and get credit toward your next Apple
+                    device.".
+                  </p>
+                  <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="pics/head.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Headphones</h5>
+                  <p class="card-text">
+                    "Trade in your headphones and get credit toward your next Apple
+                    device."
+                  </p>
+                  <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="pics/2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Computer</h5>
+                  <p class="card-text">
+                    "Trade in your computer and get credit toward your next Apple
+                    device."
+                  </p>
+                  <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="pics/las.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">iPad</h5>
+                  <p class="card-text">
+                    "Trade in your iPad and get credit toward your next Apple
+                    device."
+                  </p>
+                  <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
